@@ -1,16 +1,13 @@
+import React from 'react';  
+import Carousel from 'react-multi-carousel'; // Ensure you have this carousel package installed  
+import 'react-multi-carousel/lib/styles.css'; // Import carousel styles  
 import meter1 from "../assets/img/meter1.svg";  
-import meter2 from "../assets/img/meter2.svg"; // Ensure these images are imported  
-import meter3 from "../assets/img/meter3.svg"; // Ensure these images are imported  
-import colorSharp from "../assets/img/color-sharp.png";  
-import Carousel from "react-multi-carousel"; // Make sure this import is correct  
-import "react-multi-carousel/lib/styles.css"; // Make sure to add styles if needed  
+import meter2 from "../assets/img/meter2.svg"; // Assuming you have this image  
+import meter3 from "../assets/img/meter3.svg"; // Assuming you have this image  
+import colorSharp from "../assets/img/colorSharp.png"; // Assuming you have the background image  
 
-export const Skills = () => {  
+const Skills = () => {  
   const responsive = {  
-    superLargeDesktop: {  
-      breakpoint: { max: 4000, min: 3000 },  
-      items: 5  
-    },  
     desktop: {  
       breakpoint: { max: 3000, min: 1024 },  
       items: 3  
@@ -47,15 +44,15 @@ export const Skills = () => {
                 </div>  
                 <div className="item">  
                   <img src={meter2} alt="Machine Learning" />  
-                  <h5>ML</h5>  
+                  <h5>Machine Learning</h5>  
                 </div>  
                 <div className="item">  
                   <img src={meter3} alt="UI/UX Design" />  
-                  <h5>UI/UX</h5>  
+                  <h5>UI/UX Design</h5>  
                 </div>  
                 <div className="item">  
                   <img src={meter1} alt="Android Development" />  
-                  <h5>Android</h5>  
+                  <h5>Android Development</h5>  
                 </div>  
               </Carousel>  
             </div>  
@@ -65,4 +62,6 @@ export const Skills = () => {
       <img className="background-image-left" src={colorSharp} alt="Background" />  
     </section>  
   );  
-};
+};  
+
+export default Skills;
