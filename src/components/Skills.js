@@ -1,10 +1,10 @@
 import React from 'react';  
-import Carousel from 'react-multi-carousel'; // Ensure you have this carousel package installed  
-import 'react-multi-carousel/lib/styles.css'; // Import carousel styles  
-import meter1 from "../assets/img/meter1.svg";  
-import meter2 from "../assets/img/meter2.svg"; // Assuming you have this image  
-import meter3 from "../assets/img/meter3.svg"; // Assuming you have this image  
-import colorSharp from "../assets/img/colorSharp.png"; // Assuming you have the background image  
+import Carousel from 'react-multi-carousel'; // Ensure Carousel is imported from the appropriate package  
+import 'react-multi-carousel/lib/styles.css'; // Import styles for Carousel  
+import meter1 from '../assets/img/meter1.png'; // Adjust your paths according to your structure  
+import meter2 from '../assets/img/meter2.png';  
+import meter3 from '../assets/img/meter3.png';  
+import colorSharp from '../assets/img/colorSharp.png';  
 
 const Skills = () => {  
   const responsive = {  
